@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+  --cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --dark_blue: hsl(212, 21%, 14%);
+  --Dark_grayish: hsl(228, 12%, 48%);
+ --White: hsl(0, 0%, 100%); 
+  --font_mont:  'Montserrat', sans-serif;
+  --font_trans: 'Fraunces', serif;;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;       
+}
+
+
+p {
+  font-size: 14px;
+  padding-bottom: 2rem;
+  font-family: var(--font_mont);
+  font-weight: 500;
+}
+
+h1 {
+  font-family: var(--font_trans);
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#main {
+  width: 100vw;
+  height: 80vh;
+ background: var(--White);
+}
+
+#main .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  height: 90%;
+  margin: 5% auto;
+  background: var(--Cream);
+}
+
+/* image-------------- */
+.image {
+  flex-basis: 30%;
+}
+
+.image img {
+  width: 100%;
+  height: 495px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 14px 0 0 14px;
+}
+
+/* M_text-------------------- */
+.m_text {
+  flex-basis: 30%;
+  padding: 2rem 2.5rem;
+  border-radius: 0 17px 14px 0;
+  background: var(--White);
+}
+
+.top > p:first-child{
+  padding-top: 0.5rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.top > p:last-child{
+  line-height: 1.5;
+  color: var(--Dark_grayish);
+  font-weight: 700;
+}
+
+.top h1 {
+  color: var(--dark_blue);
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.price p {
+  margin-left: 0.5rem;
+  text-decoration: line-through;
+}
+
+.price h1 {
+  color: var(--cyan);
+}
+
+/* Cart------------------- */
+.cart {
+  margin-bottom: 1rem;
+}
+
+.cart a {
+  padding: 1rem 4rem;
+  background: var(--cyan);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.cart i {
+  padding-right: 1rem;
+  transition: background 300ms ease;
+}
+
+.cart a:hover {
+  background: var(--dark_blue);
+}
